@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro de Produto</title>
+	</head>
+	<body>
+		<form action="#" method="POST">
+		
+			<label for="nome">Código:</label>
+			<br>
+			<input type="text" id="codigo" name="codigo" value="0" disabled>
+			<br><br>
+			<label for="ra">Número de Cadastro:</label>
+			<br>
+			<input type="text" id="number" name="num_cadastro" required>
+			<br><br>
+			
+			<label for="email">Numero da Loja:</label>
+			<br>
+			<input type="text" id="text" name="numero_loja" required>
+			<br><br>
+			<label for="telefone">Descrição:</label>
+			<br>
+			<textarea id="comentarios" name="descricao" placeholder="texto..."></textarea>
+			<br><br>
+			
+			<label for="data_nascimento">Data:</label>
+			<br>
+			<input type="date" id="data" name="data" required>
+			<br><br>
+			
+			<label for="">Operadora:</label>
+			<br>
+			<select name="operadora" id="operadora" required>
+				<option value=""></option>
+				<option value="">Claro</option>
+				<option value="">Tim</option>
+				<option value="">Vivo</option>
+				<option value="">Algar Telecom</option>
+			</select>
+			<br><br>
+			
+			<label for="">Filial:</label>
+			<br>
+			<select name="filial" id="filial" required>
+				<option value=""></option>
+				<option value="">Redes de Varejo</option>
+				<option value="">Farmácias</option>
+				<option value="">Alimentação</option>
+			</select>
+			<br><br>
+			
+			<label for="">Empresa Matriz:</label>
+			<br>
+			<select name="empresa" id="empresa" required>
+				<option value=""></option>
+				<option value="">Magazine Luiza</option>
+				<option value="">Banco do Brasil</option>
+				<option value="">Grupo Boticário</option>
+			</select>
+			<br><br>
+			
+			<label for="">Origem de Contas Countabeis:</label>
+			<br>
+			<select name="Countabeis" id="Countabeis" required>
+				<option value="">Contrato</option>
+				<option value="">Passivo</option>
+				<option value="">Patrimônio Líquido</option>
+			</select>
+			<br><br>
+			
+			<label for="">Status do Contrato:</label>
+			<br>
+			<select name="status" id="status" required>
+				<option value="">Ativo</option>
+				<option value="">Desativo</option>
+			</select>
+			<br><br>
+			
+			<label for="">Identificar Comprovante por:</label>
+			<br>
+			<select name="identificar_comprovante" id="identificar_comprovante" required>
+				<option value="">Número de autorização</option>
+				<option value="">91540735</option>
+				<option value="">55763635</option>
+				<option value="">2231893</option>
+				<option value="">10575267</option>
+				<option value="">36949601</option>
+			</select>
+			
+			<br><br>
+			<input type="checkbox" id="deposito" name="deposito" required>Depósito da Conta Informada no Arquivo
+			<br>
+			<input type="checkbox" id="conciliação" name="conciliação">Conciliação Consolidada
+			<br>
+			<input type="checkbox" id="remover" name="remover">Remover Zeros esquerda do NºComprovante
+			<br>
+			<input type="checkbox" id="validar" name="validar">Validar valores na coliliação automática
+			<br>
+			<input type="checkbox" id="Transação" name="Transação">Usar campo de Usuário [Data da Transação do Cartão] do Contas a Receber para identificar o comprovante na conciliação
+			<br>
+			<input type="checkbox" id="gerar_contas" name="gerar_contas">Gerar Contas a Receber por Conta para comprovante não identificados
+			<br>
+			<input type="checkbox" id="receber" name="receber" disabled >Contas a Receber Agrupado
+			<br>
+			<input type="checkbox" id="projeto" name="projeto">Usar Projeto do Cadastro de Equipamento
+			<br>
+			<input type="checkbox" id="Agrupado" name="agrupado">LCM Agrupado de comprovante de Cartão
+			<br><br>
+			
+			<label for="">Cartão</label>
+			<br>
+			<input type="number" id="numero" name="numero" placeholder="Não Informado" disabled>
+			<br><br>
+			
+			<label for="email">Forma de Pagamento</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" placeholder="Não Informado" disabled>
+			<br><br>
+			
+			<label for="email">Conta de Provisão</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta do Banco</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta para Comissão</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta para Cancelamento</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta de Antecipação</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta de Ajuste Debito</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta de Ajuste à Crédito</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta de Despesas de Aluguel</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<label for="email">Conta de Compensação</label>
+			<br>
+			<input type="text" id="pagamento" name="Pagamento" required>
+			<input type="text" id="conta_provisão" name="conta_provisão">
+			<br><br>
+			
+			<input style="background-color: yellow"type="submit" value="Inserir">
+			<button style="background-color: yellow" onclick="excluirInformacao()">Cancelar</button>
+			<input style="background-color: yellow"type="submit" value="Log">
+		</form>
+	</body>
+</html>
