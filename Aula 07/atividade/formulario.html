@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Site da Coca Cola</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a style="background-color: red;" href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-angle-down"></i> Peças</a>
+                        <div class="dropdown-content">
+                            <a href="formulario.html">Formulário</a>
+                            <a href="tabela.html">Tabela</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="principal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOfmCtTG8qEhgQnBq6L8y6auQoYBnnPqzLXznkfDcXw&s=10">
+            <h2>1. Informações do Produto</h2>
+            <br>
+            <form action="#" method="POST">
+		
+			<label for="nome">Nome do Produto:</label>
+			<br>
+			<input type="text" id="nome" name="nome" required>
+			<br><br>
+			
+			<label for="email">Código do Produto:</label>
+			<br>
+			<input type="email" id="email" name="email" placeholder="Ex:CC001" required>
+			<br><br>
+			
+			<label for="categoria_produto">Categoria do Produto:</label>
+			<br>
+			<select name="categoria" id="categoria" required>
+				<option value="">Selecione...</option>
+			</select>
+			<br><br>
+            <label for="marca_produto">Marca do Produto:</label>
+			<br>
+			<select name="marca" id="marca" required>
+				<option value="">Selecione...</option>
+			</select>
+            <br><br>
+            <label for="comentarios">Descrição do Produto:</label>
+			<br>
+			<textarea id="comentarios" name="comentarios" placeholder="Descreva o Produto..."></textarea>
+			<br><br>
+            <h2>2. Preço e Produto</h2>
+            <br>
+			<label for="preco">Preço do Produto(R$):</label>
+			<br>
+			<input type="text" id="preco" name="preco" placeholder="Preço..." required>
+			<br><br>
+
+			<label for="promocional">Preço promocional(R$):</label>
+			<br>
+			<input type="text" id="promocional" name="promocional" placeholder="Preço" required>
+			<br><br>
+
+			<label for="qtd">Quantidade em Estoque:</label>
+			<br>
+			<input type="text" id="qtd" name="qtd" placeholder="quantidade" required>
+			<br><br>
+			
+			<label for="idade">Estoque Mínimo:</label>
+			<br>
+			<input type="text" id="estoque" name="estoque" placeholder="Estoque Mínimo..." required>
+			<br><br>
+			<hr>
+			<h2>3. Características do Produto</h2>
+			
+			<input type="checkbox" id="termos" name="termos" required>Sem Açúcar
+			<input type="checkbox" id="notificacoes" name="notificacoes">Baixa caloria<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Com gás<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Sem gás<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Com cafeína<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Sem cafeína<br>
+			<input type="checkbox" id="notificacoes" name="notificacoes">Embalagem retonável<br><br>
+			
+			<label for="tipo">Tipo de Embalagem:</label>
+			<br>
+			<input type="radio" id="Lata" name="Lata" value="Lata" required>Lata
+			<br>
+			<input type="radio" id="PET" name="PET" value="Garrafa_PET">Garrafa PET
+			<br>
+			<input type="radio" id="vidro" name="vidro" value="Garrafa_vidro">Garrafa de vidro
+			<br>
+			<input type="radio" id="caixa" name="caixa" value="caixa">Caixa
+			<br>
+
+			<label for="marca_produto">Volume da embalagem:</label>
+			<br>
+			<select name="marca" id="marca" required>
+				<option value="">Selecione...</option>
+			</select>
+			<br><br>
+			<label for="qtd">Peso do Produto(gramas):</label>
+			<br>
+			<input type="text" id="peso" name="peso" placeholder="peso..." required>
+			<br><br>
+			<hr>
+			<h2>4. Fabricação e Validade</h2>
+			<label for="qtd">Data de Fabricação:</label>
+			<br>
+			<input type="date" id="data" name="data" required>
+			<br><br>
+			<label for="qtd">Data de Validade:</label>
+			<br>
+			<input type="date" id="data" name="data" required>
+			<br><br>
+			<label for="qtd">Horário de validade:</label>
+			<br>
+			<input type="time" id="horario" name="horario" required>
+			<br><br>
+			<label for="qtd">Mês de lançamento do Produto:</label>
+			<br>
+			<input type="lançamento" id="lançamento" name="lançamento" required>
+			<br><br>
+			<label for="qtd">Número do Lote:</label>
+			<br>
+			<input type="Número" id="Número" name="Número" placeholder="Ex: LT2026001" required>
+			<br><br>
+			<label for="marca_produto">País de Fabricação:</label>
+			<br>
+			<select name="marca" id="marca" required>
+				<option value="">Selecione...</option>
+			</select>
+			<br><br>
+			<hr>
+			<h2>5. Informações Nutricionais</h2>
+			<br>
+			<label for="preco">Quantidade de calorias(kcal):</label>
+			<br>
+			<input type="text" id="calorias" name="calorias" placeholder="calorias..." required>
+			<br><br>
+			<label for="preco">Quantidade de açúcar(g):</label>
+			<br>
+			<input type="text" id="açúcar" name="açúcar" placeholder="açúcar..." required>
+			<br><br>
+			<label for="preco">Quantidade de sódio(mg):</label>
+			<br>
+			<input type="text" id="sódio" name="sódio" placeholder="sódio..." required>
+			<br><br>
+			<label for="preco">Quantidade de cafeína(mg):</label>
+			<br>
+			<input type="text" id="cafeína" name="cafeína" placeholder="cafeína..." required>
+			<br><br>
+			<label for="Ingredientes">Ingredientes:</label>
+			<br>
+			<textarea id="Ingredientes" name="Ingredientes" placeholder="Informe os ingredientes..."></textarea>
+			<br><br>
+			<hr>
+			<h2>6. Fornecedor e Distribuição</h2>
+
+			<hr>
+			<h2>7. Imagens e Documentos</h2>
+			<label for="foto">Imagem do produto:</label>
+			<br>
+			<input type="file" id="foto" name="foto" required>
+			<br><br>
+			<label for="foto">Ficha Técnica do Produto:</label>
+			<br>
+			<input type="file" id="foto" name="foto" required>
+			<br><br>
+			<input type="submit" value="Cadastrar Aluno">
+		</form>
+        </main>
+    </body>
+</html>
