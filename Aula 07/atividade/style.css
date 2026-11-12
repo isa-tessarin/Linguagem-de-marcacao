@@ -40,7 +40,7 @@ li a:hover {
 }
 
 .principal {
-    margin-top: 60px; 
+    margin-top: 60px;
     margin-left: 40px;
     margin-right: 40px;
     padding-bottom: 40px;
@@ -50,6 +50,12 @@ li a:hover {
     margin-top: 20px;
     margin-bottom: 15px;
     font-size: 28px;
+}
+
+.principal h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #000;
 }
 
 .principal p {
@@ -65,21 +71,27 @@ li a:hover {
 }
 
 .principal li {
-    float: none; 
+    float: none;
     margin-bottom: 5px;
 }
 
 .img-destaque {
     width: 100%;
-    max-width: 600px; 
+    max-width: 600px;
     display: block;
     margin-bottom: 20px;
 }
 
 .img-logo {
-    width: 350px; 
+    width: 350px;
     display: block;
     margin-top: 30px;
+}
+
+.img-logo-tabela {
+    width: 200px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 
@@ -92,7 +104,7 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #8f8d8d;
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     z-index: 1;
@@ -114,4 +126,39 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+.tabela-produtos {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.tabela-produtos th {
+    background-color: #ff0015;
+    color: #fff;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #dcdcdc;
+}
+
+.tabela-produtos td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #111;
+}
+
+.tabela-produtos tbody tr:nth-child(even) {
+    background-color: #fcaeb5;
+}
+
+.tabela-produtos tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tabela-produtos tbody tr:hover {
+    background-color: #f79aa3;
 }
